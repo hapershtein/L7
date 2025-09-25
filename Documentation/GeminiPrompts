@@ -1,3 +1,3 @@
 1) create a new file in python that runs a simulation 1000 random samples of weight in kilograms and height in centimeters of people. Draw them in a two dimentional grid and print the function used to generate them 
 2) please update the file to add a regression line that predicts the sample distribution. Also print the funtion to generate the samples in the form of a mathematical equation and display also the equation for the regression line.  
-3) 
+3) Create a new python file named simulation2.py to run another simulation, use the equation in the form of "y = ax + b + r" where x is the weight, y is the height and r is a random number.  Print the equation and the equation of the regression line in a text box in the graph.
