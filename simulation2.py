@@ -52,7 +52,18 @@ def run_simulation():
     ax.text(0.05, 0.95, equation_text, transform=ax.transAxes, fontsize=10,
             verticalalignment='top', bbox=props)
 
-    plt.show()
+    # Save the plot to a file
+    output_path = 'Documentation/simulation_results.png'
+    plt.savefig(output_path)
+    print(f"Plot saved to {output_path}")
+
+    # Save the equations to a text file
+    equations_path = 'Documentation/simulation_equations.txt'
+    with open(equations_path, 'w') as f:
+        f.write(equation_text)
+    print(f"Equations saved to {equations_path}")
+
+    plt.close()  # Close the plot to free up memory
 
 if __name__ == '__main__':
     run_simulation()
